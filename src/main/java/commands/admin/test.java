@@ -14,14 +14,22 @@ public class test implements CommandExecutor, TabCompleter
     {
         if (sender instanceof ConsoleCommandSender || (sender instanceof Player && ((Player) sender).getPlayer().isOp()))
         {
-            if (args[0].equalsIgnoreCase("true"))
+            if (args.length == 1)
             {
-                sender.sendMessage("Debug : args : " + args[0]);
-                return true;
+                if (args[0].equalsIgnoreCase("true"))
+                {
+                    sender.sendMessage("Debug : args : " + args[0]);
+                    return true;
+                }
+                else if (args[0].equalsIgnoreCase("false"))
+                {
+                    sender.sendMessage("Debug : args : " + args[0]);
+                    return true;
+                }
             }
-            else if (args[0].equalsIgnoreCase("false"))
+            else
             {
-                sender.sendMessage("Debug : args : " + args[0]);
+                sender.sendMessage("Debug : no args");
                 return true;
             }
         }

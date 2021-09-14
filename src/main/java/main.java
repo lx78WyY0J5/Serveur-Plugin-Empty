@@ -11,14 +11,14 @@ public class main extends JavaPlugin
     public void onLoad()
     {
         logger.info("Plugin Loaded");
-        registerEvents();
-        registerCommands();
     }
 
     @Override
     public void onEnable()
     {
         logger.info("Plugin Enabled");
+        registerEvents();
+        registerCommands();
     }
 
     @Override
