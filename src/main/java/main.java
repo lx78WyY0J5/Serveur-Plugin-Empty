@@ -24,4 +24,9 @@ public class main extends JavaPlugin
     {
         logger.info("Plugin Disabled");
     }
+
+    public void registerEvents()
+    {
+
+    }
 }
