@@ -17,11 +17,11 @@ public class Lib
     public static void setPlugin(JavaPlugin plugin)
     {
         Lib.plugin = plugin;
-        logger.info("Plugin Hooked");
+        logger.info("Plugin hook is set");
     }
 
     public static void debug()
     {
-        logger.info("Debug, plugin is hooked");
+        logger.info("Plugin is hooked");
     }
 }
