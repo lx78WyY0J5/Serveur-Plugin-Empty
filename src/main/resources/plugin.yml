@@ -5,8 +5,8 @@ load: STARTUP
 api-version: 1.16
 description: "Empty Plugin"
 
-#commands:
-#  NOM:
-#    description: "§2DESCRIPTION"
-#    usage: "[§6§lSystème§r] /<command> §2<sous commande>"
-#    aliases: [ NOM1, NOM2 ]
+commands:
+  test:
+    description: "§2Commande de test"
+    usage: "[§6§lSystème§r] /<command>"
+    aliases: [ debug ]

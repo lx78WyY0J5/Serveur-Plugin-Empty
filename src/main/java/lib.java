@@ -3,7 +3,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Logger;
 
-public class Lib
+public class lib
 {
     private static JavaPlugin plugin;
 
@@ -16,7 +16,7 @@ public class Lib
 
     public static void setPlugin(JavaPlugin plugin)
     {
-        Lib.plugin = plugin;
+        lib.plugin = plugin;
         logger.info("Plugin hook is set");
     }
 
