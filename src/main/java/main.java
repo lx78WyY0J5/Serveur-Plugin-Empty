@@ -29,12 +29,12 @@ public class main extends JavaPlugin
 
     public void registerEvents()
     {
-        Bukkit.getPluginManager().registerEvents(new events.player.test(), this);
+        Bukkit.getPluginManager().registerEvents(new eventTest(), this);
     }
 
     public void registerCommands()
     {
-        Bukkit.getPluginCommand("test").setExecutor(new commands.admin.test());
-        Bukkit.getPluginCommand("test").setTabCompleter(new commands.admin.test());
+        Bukkit.getPluginCommand("test").setExecutor(new commandTest());
+        Bukkit.getPluginCommand("test").setTabCompleter(new commandTest());
     }
 }
