@@ -7,7 +7,7 @@ public class lib
 {
     private static JavaPlugin plugin;
 
-    private static Logger     logger = Bukkit.getLogger();
+    private static Logger logger = Bukkit.getLogger();
 
     public static JavaPlugin getPlugin()
     {
@@ -20,8 +20,8 @@ public class lib
         logger.info("Plugin hook is set");
     }
 
-    public static void debug()
+    public static void hook()
     {
-        logger.info("Plugin is hooked");
+        //APINAME.lib.setPlugin(main.getPlugin(main.class));
     }
 }

@@ -19,6 +19,7 @@ public class main extends JavaPlugin
         logger.info("Plugin Enabled");
         registerEvents();
         registerCommands();
+        lib.hook();
     }
 
     @Override

@@ -31,6 +31,10 @@ public class commandTest implements CommandExecutor, TabCompleter
                 return true;
             }
         }
+        else
+        {
+            sender.sendMessage("OP || Serveur");
+        }
         return false;
     }
 
